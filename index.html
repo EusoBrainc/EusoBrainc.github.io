@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            border: 1px solid;
+            box-sizing: border-box;
+        }
+
+        .opciones {
+            background: #A3A565;
+            display: flex;
+            justify-content: space-between;
+            border: 0px;
+            padding-left: 70px;
+            padding-right: 5px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            text-decoration: none;
+            border: 0px;
+            margin: 0px;
+            padding: 0px;
+            height: 70px;
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            height: 70px;
+            border: 0px;
+            margin-right: 20px;
+            align-content: center;
+
+        }
+
+
+        nav ul li a {
+            text-decoration: none;
+            color: #000000;
+
+        }
+
+        .opciones .login {
+            width: 400px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .usuario {
+            display: flex;
+            align-items: center;
+        }
+
+        .idioma {
+            display: flex;
+            align-items: center;
+        }
+
+        .spa {
+            background-image: url(./images/main.png);
+            height: 667px;
+            width: 100%;
+            font-size: 96px;
+            @import url(https://fonts.googleapis.com/css?family=Romanesco:regular);
+            font-family: "Romanesco", Regular;
+            display: flex;
+            float: left;
+            border: 0px;
+            margin: 0px;
+        }
+
+        .cajas {
+            display: flex;
+            padding: 100px;
+            justify-content: space-between;
+            gap: 134px;
+        }
+
+        h2 {
+            border-radius: 15px 15px 0 0;
+            height: 70px;
+            font-size: 32px;
+            @import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+            font-family: "Inter", sans-serif;
+            background: #A3A656;
+            margin: 0px;
+            text-align: center;
+            align-items: center;
+            color: #FFFFFF;
+            line-height: 70px;
+            
+        }
+
+        .cita {
+            height: 100px;
+            background-color: #F2F6F6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap:10px
+        }
+
+        .reserva {
+            border: 0px;
+            width: 300px;
+            height: 60px;
+            border-radius: 15px;
+        }
+
+        .codigo {
+            border: 0px;
+            width: 200px;
+            height: 60px;
+            border-radius: 15px;
+        }
+
+        .menu {
+            font-family: "Inter", sans-serif;
+            font-style: regular;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+        <div class="opciones">
+            <nav>
+                <ul>
+                    <li><a href="#">PROMOCIONES</a></li>
+                    <li><a href="#">FOTOS</a></li>
+                    <li><a href="#">SERVICIOS</a></li>
+                    <li><a href="#">MAPA</a></li>
+                    <li><a href="#">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="login">
+                <div class="usuario">
+                    <img src="./images/user.png" alt="usuario">
+                    <p>Mi Cuenta</p>
+                </div>
+                <div class="idioma">
+                    <div>
+                        <p>ES</p>
+                    </div>
+                    <div class="idioma">
+                        <img src="./images/flag.png" alt="">
+                        <img src="./images/arrow.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <p class="spa">SPA - Todos</p>
+        </div>
+        <div class="cita">
+            <p class="menu">RESERVA TU CITA: </p>
+            <input class="reserva" type="text">
+            <p class="menu">CÓDIGO PROMOCIONAL: </p>
+            <input class="codigo" type="text" placeholder="CÓDIGO">
+        </div>
+        <div class="cajas">
+            <div>
+                <h2>Masaje de pies</h2>
+                <img src="./images/pies.png" alt="pies">
+                <p>Esta es una descripcion de la opción en cuestión .....</p>
+                <p class="precio">$65</p>
+            </div>
+            <div>
+                <h2>Masaje relajante</h2>
+                <img src="./images/relajante.png" alt="pies">
+                <p>Esta es una descripcion de la opción en cuestión .....</p>
+                <p class="precio">$60</p>
+            </div>
+            <div>
+                <h2>Masaje con bambú</h2>
+                <img src="./images/bambu.png" alt="pies">
+                <p>Esta es una descripcion de la opción en cuestión .....</p>
+                <p class="precio">$58</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
