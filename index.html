@@ -27,7 +27,7 @@
         }
 
         * {
-            border: 1px solid;
+            /*border: 1px solid;*/
             box-sizing: border-box;
         }
 
@@ -185,6 +185,67 @@
             justify-items: center;
             align-items: center;
         }
+        .vip{
+            height: 770px;
+            background-color: #F2F6F6;
+            
+            
+        }
+        .cajas_vip{
+            display: flex;
+            justify-content: space-around;
+            padding-top: 75px;
+        }
+        .clasificacion{
+            width: 255px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .vip .cajas_vip .clasificacion .img{
+            border: 10px solid #384001;
+            border-radius: 50%;
+            width: 233px;
+            height: 233px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 0px;
+        }
+        .vip .cajas_vip .clasificacion a{
+            width: 270px;
+            height: 51px;
+            background-color: #A3A656;
+            border-radius: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: #FFFFFF;
+            font-family: "Inter", sans-serif;
+            font-style: SemiBold;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+
+        .vip .cajas_vip .clasificacion a:hover{
+            background-color: #384001;
+        }
+
+        .vip .cajas_vip .clasificacion ul li{
+            font-size: 18px;
+        }
+        .vip .cajas_vip .clasificacion p{
+            font-size: 30px;
+            font-family: "Inter", sans-serif;
+            font-style: semiBold ;
+            margin: 10px 0px 30px 0px;
+
+
+        }
+
+
+
     </style>
 </head>
 
@@ -254,6 +315,45 @@
                     <a class="breservar" href="">RESERVAR</a>
                 </div>
             </div>
+        </div>
+        <div class="vip">
+            <h2 class="titulos_vip">Haste socio y prueba nuestro beneficios</h2>
+            <div class="cajas_vip">
+                <div class="clasificacion">
+                    <div class="img">
+                        <img src="./images/gold.png" alt="">
+                    </div>
+                    <p>GOLD</p>
+                    <a href="">VER CONDICIONES</a>
+                    <ul>
+                        <li>Gimnasio</li>
+                        <li>Piscina</li>
+                        <li>Todos los tratamientos</li>
+                    </ul>
+                </div>
+                <div class="clasificacion">
+                    <div class="img">
+                        <img src="./images/premium.png" alt="">
+                    </div>
+                    <p>PREMIUM</p>
+                    <a href="">VER CONDICIONES</a>
+                    <ul>
+                        <li>Gimnasio</li>
+                        <li>Todos los tratamientos</li>
+                    </ul>
+                </div>
+                <div class="clasificacion">
+                    <div class="img">
+                        <img src="./images/plate.png" alt="">
+                    </div>
+                    <p>PLATE</p>
+                    <a href="">VER CONDICIONES</a>
+                    <ul>
+                        <li>Tratamientos Faciales</li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
     </div>
 </body>
