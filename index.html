@@ -31,89 +31,119 @@
             box-sizing: border-box;
         }
 
+        body {
+            margin: 0px;
+        }
+
         .opciones {
             background: #A3A565;
+            border: 0px;
             display: flex;
             justify-content: space-between;
-            border: 0px;
             padding-left: 70px;
             padding-right: 5px;
         }
 
         nav ul {
-            list-style-type: none;
-            text-decoration: none;
             border: 0px;
+            display: flex;
+            height: 70px;
+            list-style: none;
+            list-style-type: none;
             margin: 0px;
             padding: 0px;
-            height: 70px;
-            display: flex;
-            list-style: none;
+            text-decoration: none;
         }
 
         nav ul li {
-            height: 70px;
-            border: 0px;
-            margin-right: 20px;
             align-content: center;
+            border: 0px;
+            height: 70px;
+            margin-right: 20px;
 
         }
 
 
         nav ul li a {
-            text-decoration: none;
             color: #000000;
+            font-family: 'Inter', sans-serif;
+            text-decoration: none;
+        }
 
+        .opciones a:hover {
+            color: #FFFF00;
         }
 
         .opciones .login {
-            width: 400px;
             display: flex;
             justify-content: space-between;
+            width: 230px;
+
         }
 
         .usuario {
-            display: flex;
             align-items: center;
+            display: flex;
         }
 
         .idioma {
-            display: flex;
             align-items: center;
+            display: flex;
         }
 
-        .spa {
+        .logintexto {
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            font-style: normal;
+        }
+
+        .main {
             background-image: url(./images/main.png);
-            height: 667px;
-            width: 100%;
+            background-size: 100% 100%;
+            border: 0px;
+            display: flex;
             font-size: 96px;
+            height: 667px;
+            margin: 0px;
+            width: 100%;
+        }
+
+        .main .spa {
             @import url(https://fonts.googleapis.com/css?family=Romanesco:regular);
             font-family: "Romanesco", Regular;
-            display: flex;
-            float: left;
-            border: 0px;
-            margin: 0px;
+            left: 12%;
+            position: absolute;
+            top: 17%;
+        }
+
+        .main .slogan {
+            font-family: 'Inter', sans-serif;
+            font-size: 32px;
+            font-style: semibold;
+            left: 12%;
+            position: absolute;
+            top: 43%;
         }
 
         .cajas {
             display: flex;
-            padding: 100px;
-            justify-content: space-between;
             gap: 134px;
+            justify-content: space-between;
+            padding: 100px;
         }
 
         h2 {
-            border-radius: 15px 15px 0 0;
-            height: 70px;
-            font-size: 32px;
             @import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
-            font-family: "Inter", sans-serif;
+            align-items: center;
             background: #A3A656;
+            border-radius: 15px 15px 0 0;
+            color: #FFFFFF;
+            font-size: 32px;
+            height: 70px;
+            font-family: "Inter", sans-serif;
+            line-height: 70px;
             margin: 0px;
             text-align: center;
-            align-items: center;
-            color: #FFFFFF;
-            line-height: 70px;
 
         }
 
@@ -128,22 +158,22 @@
 
         .reserva {
             border: 0px;
-            width: 300px;
-            height: 60px;
             border-radius: 15px;
+            height: 60px;
+            width: 300px;
         }
 
         .codigo {
             border: 0px;
-            width: 200px;
-            height: 60px;
             border-radius: 15px;
+            height: 60px;
+            width: 200px;
         }
 
         .menu {
             font-family: "Inter", sans-serif;
-            font-style: regular;
             font-size: 16px;
+            font-style: regular;
             text-transform: uppercase;
         }
 
@@ -160,19 +190,18 @@
 
         .cajas img {
             width: 100%;
-
         }
 
         .breservar {
-            width: 140px;
-            height: 45px;
+            align-items: center;
             background-color: #A3A656;
             border-radius: 40px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-decoration: none;
             color: #FFFFFF;
+            display: flex;
+            height: 45px;
+            justify-content: center;
+            text-decoration: none;
+            width: 140px;
         }
 
         .breservar:hover {
@@ -180,84 +209,118 @@
         }
 
         .divfinal {
+            align-items: center;
             display: flex;
             justify-content: space-between;
             justify-items: center;
-            align-items: center;
         }
-        .vip{
-            height: 770px;
+
+        .vip {
             background-color: #F2F6F6;
-            
-            
+            height: 770px;
         }
-        .cajas_vip{
+
+        .cajas_vip {
             display: flex;
             justify-content: space-around;
             padding-top: 75px;
         }
-        .clasificacion{
-            width: 255px;
+
+        .clasificacion {
+            align-items: center;
             display: flex;
             flex-direction: column;
-            align-items: center;
+            width: 255px;
         }
-        .vip .cajas_vip .clasificacion .img{
+
+        .vip .cajas_vip .clasificacion .img {
+            align-items: center;
             border: 10px solid #384001;
             border-radius: 50%;
-            width: 233px;
-            height: 233px;
             display: flex;
+            height: 233px;
             justify-content: center;
-            align-items: center;
             margin: 10px 0px;
+            width: 233px;
         }
-        .vip .cajas_vip .clasificacion a{
-            width: 270px;
-            height: 51px;
+
+        .vip .cajas_vip .clasificacion a {
+            align-items: center;
             background-color: #A3A656;
             border-radius: 35px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
             color: #FFFFFF;
+            display: flex;
+            height: 51px;
             font-family: "Inter", sans-serif;
             font-style: SemiBold;
+            font-size: 16px;
+            justify-content: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            width: 270px;
+        }
+
+        .vip .cajas_vip .clasificacion a:hover {
+            background-color: #384001;
+        }
+
+        .vip .cajas_vip .clasificacion ul li {
+            font-size: 18px;
+        }
+
+        .vip .cajas_vip .clasificacion p {
+            margin: 10px 0px 30px 0px;
+            font-family: "Inter", sans-serif;
+            font-size: 30px;
+            font-style: semiBold;
+        }
+
+        .vip .titulo_vip {
+            background: none;
+            color: #000000;
+            font-family: "Inter", sans-serif;
+            font-size: 30px;
+            font-style: SemiBold;
+        }
+
+        .seguridad {
+            align-items: center;
+            background: #384001;
+            display: flex;
+            height: 97px;
+            justify-content: space-between;
+            padding-left: 70px;
+        }
+
+        .seguridad a {
+            padding-right: 70px;
+        }
+
+        .seguridadtexto {
+            color: #A3A656;
+            font-family: 'Inter', sans-serif;
             font-size: 16px;
             text-transform: uppercase;
         }
 
-        .vip .cajas_vip .clasificacion a:hover{
-            background-color: #384001;
+        .seguridadtexto:hover {
+            color: #FFFF00;
         }
 
-        .vip .cajas_vip .clasificacion ul li{
-            font-size: 18px;
-        }
-        .vip .cajas_vip .clasificacion p{
-            font-size: 30px;
-            font-family: "Inter", sans-serif;
-            font-style: semiBold ;
-            margin: 10px 0px 30px 0px;
-
-
-        }
-        .vip .titulo_vip{
-            font-size: 30px;
-            font-family: "Inter", sans-serif;
-            font-style: SemiBold ;
-            background: none;
-            color: #000000;
+        .redes {
+            display: flex;
         }
 
+        .seguridad .logosRedes img {
+            padding-left: 20px;
+            padding-right: 30px;
 
-
+        }
     </style>
 </head>
 
 <body>
-    <div>
+    <div class="general">
 
         <div class="opciones">
             <nav>
@@ -272,11 +335,11 @@
             <div class="login">
                 <div class="usuario">
                     <img src="./images/user.png" alt="usuario">
-                    <p>Mi Cuenta</p>
+                    <p class="logintexto">Mi Cuenta</p>
                 </div>
                 <div class="idioma">
                     <div>
-                        <p>ES</p>
+                        <p class="logintexto">ES</p>
                     </div>
                     <div class="idioma">
                         <img src="./images/flag.png" alt="">
@@ -287,6 +350,8 @@
         </div>
         <div class="main">
             <p class="spa">SPA - Todos</p>
+            <p class="slogan">Regalate un momento de paz y <br>
+                consiente a tu piel en el mejor lugar</p>
         </div>
         <div class="cita">
             <p class="menu">RESERVA TU CITA: </p>
@@ -361,6 +426,24 @@
                 </div>
             </div>
 
+        </div>
+        <div class="seguridad">
+            <nav>
+                <ul>
+                    <li><a class="seguridadtexto" href="">POLITICA DE COOKIES</a></li>
+                    <li><a class="seguridadtexto" href="">AVISO LEGAL</a></li>
+                    <li><a class="seguridadtexto" href="">PROTECCION DE DATOS</a></li>
+                    <li><a class="seguridadtexto" href="">MAPA DEL SITIO</a></li>
+                </ul>
+            </nav>
+            <div class="redes">
+                <p class="seguridadtexto">SÍGUENOS EN</p>
+                <div class="logosRedes">
+                    <img src="./images/rs_facebook.png" alt="">
+                    <img src="./images/rs_twiter.png" alt="">
+                    <img src="./images/rs_youtube.png" alt="">
+                </div>
+            </div>
         </div>
     </div>
 </body>
